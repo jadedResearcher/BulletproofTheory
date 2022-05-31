@@ -1,0 +1,113 @@
+<html>
+
+<head>
+  <title>Bulletproof Theory</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="alt.ico" />
+  <script>
+
+    initBlorbos = (blorbos) => {
+        const sources = {
+          solemn: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thesolemn.png',
+          twin2: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thetwins2.png',
+          _: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/_.png',
+          twin1: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thetwins1.png',
+          reflection: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thereflection.png',
+          match: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thematch.png',
+          shot: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theshot.png',
+          end: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theend.png',
+          k: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/k.png', //doesn't deserve a title, bastard man
+        }
+        const ele = document.querySelector("#cast");
+        if(!ele){
+          console.error("JR NOTE: cannot find cast section. Did you REALLY mean to call this?");
+          return;
+        }
+
+        for(let blorbo of blorbos){
+          const img = document.createElement("img");
+          img.className = "blorbo";
+          img.src = sources[blorbo];
+          ele.append(img);
+        }
+        //stress test
+        /*
+        for(let source of Object.values(sources)){
+          const img = document.createElement("img");
+          img.className = "blorbo";
+          img.src = source;
+          ele.append(img);
+        }*/
+    }
+
+    window.onload = () => {
+      initBlorbos(["_"])
+    }
+
+    window.onclick = () => {
+      document.querySelector("#muzak").play();
+      document.querySelector("#story").style.display = "block";
+      document.querySelector("#euphoria").style.display = "none";
+
+    }
+  </script>
+</head>
+
+
+<body>
+
+  <audio id="muzak">
+    <source src="http://farragofiction.com/CodexOfRuin/MallMusicMuzakMallOf1974/Mall Music Muzak - Mall Of 1974 - 04 Food Court Calling" type="audio/mpeg">
+    If you're reading this, audio isn't supported.
+  </audio>
+  <div id="container">
+    <button id="euphoria">Click To Experience Nothing</button>
+
+    <div id="story">
+        <p>It never gets any easier to do what they do.&nbsp;</p>
+        <p><br></p>
+        <p>Not that they are not accustomed to it, of course-- they are not winning any awards, but they have committed it to memory. What it does mean is that they carry themselves in a way that is territorial and somewhat hostile at worst, and stoic at best. Of course they know-- they do it on purpose.</p>
+        <p><br></p>
+        <p>Everyone, however, thinks that they have a bulletproof theory on why that is.&nbsp;</p>
+        <p><br></p>
+        <p>Khana suspects they remain so bitter because of the state of their body, worn down by the trials presented by the corporation; they could not be further from the truth. It is true that the injuries they have sustained have changed their life: they cannot move like they used to, and in some states they might come to begrudge it. But the world goes on either way, and the expectation of life after injury is greatly exaggerated.&nbsp;</p>
+        <p><br></p>
+        <p>The Training Captain, instead, believes their pain to come from their curse, as it isolates them from the world, forcing them to live their life unseen, unheard. This has some weight, but it is still incorrect. Had they no responsibilities, they would gladly spend their days as some sort of lesser beast: mindlessly scaring the populace, feeding off their corpses, and gratifying their desire to be seen. But their duty to their team demands they walk the line of humanity, so human they shall stay, at the expense of both the victim and the monster within them.</p>
+        <p><br></p>
+        <p>The rest of that captain&rsquo;s team have had their theories, as well. Most of them have indulged the thought at least once. Some, like the short one with the bouncy hair, have the decency to discuss it in private. The one in the suit asks them outright, which is a futile manner. The blond one still does not notice anything is wrong.</p>
+        <p><br></p>
+        <p>Only one of them ever guessed right. The chain smoker, the heavy drinker, the rambling addict with the conspiracy walls. Often more pitied than respected. She didn&rsquo;t guess it right by some sort of innately genius observation. No, nothing like that. She figured it out because she&rsquo;s been there.</p>
+        <p><br></p>
+        <p>What hurts, what weighs them down, is the burden of knowledge.</p>
+        <p><br></p>
+        <p>The corporation committed many crimes against them all. It promised them the world then stole not just their lives, but their futures. It let them be mangled and torn, physically and mentally, in ways no human was meant to bear, then blamed it on their weakness. Its foulest act, however, remains quite simple: the corporation changed them irrevocably.&nbsp;</p>
+        <p><br></p>
+        <p>In a better world-- this world, even-- their abilities would&rsquo;ve translated into something mundane, but fulfilling. But the state of the furniture is not something one considers when constructing a building. A fridge that stops working is to be replaced, a broken chair tossed aside; so there they are, broken frames that were once men, reduced to gibbering lunatics and strips of beaten code, forced to repeat the same actions for eternity. Had they known anything else, they might&rsquo;ve all settled into this reality with some finality. Instead their souls remain haunted by creatures that never could&rsquo;ve been and a system that does not exist anymore. All their citations are written in a system that was never conceived in the first place.</p>
+        <p><br></p>
+        <p>Had that been all that haunted them, though, they wouldn&rsquo;t still talk about it. Why lead, knowing all of this? It would be easier to quit, to hide under the stairs until they starve, to become the monster this world wishes them to be-- anything but to push forward. So, why?</p>
+        <p><br></p>
+        <p>Simple. They still lead because they have to, haunted by their own debt to a man who is no longer there.</p>
+        <p><br></p>
+        <p>Some would say that there is nothing of their old mentor left in the strange shell of a man they have today, eagerly sticking their hands in oven burners and in other animals&rsquo; mouths: that whatever is left today is a creature of mindless obedience, soothed only by the rules they have placed upon him, corralled into a make-believe story where there are reasons to do anything at all. Perhaps they&rsquo;ve deluded themselves into waiting for some revelation, or rapture, that will never come.</p>
+        <p><br></p>
+        <p>But they still see him. Fuck, do they still see him. He still stands up straight, and he still likes writing, and he still speaks with that soft-spoken yet well-mannered tone, and he still speaks in questions, endless questions, none of them ever superfluous.</p>
+        <p><br></p>
+        <p>The core of his being persists, even after all these years, and still yearns to know it all.&nbsp;</p>
+        <p><br></p>
+        <p>They do not hope to ever get their captain back-- that dream is long dead. To still dare to hope would be insanity. So many times they have seen him make progress, and that many times they have seen him slide back into endless nothing, accompanied only by the cold embrace of nescience. And it hurts. It hurts more than anything to experience that loss over and over again.</p>
+        <p><br></p>
+        <p>It&rsquo;s not something they can fix. Nor something they want to fix. To fix him is to deny his identity as the same man, or to imply that the one standing next to him is any less real.&nbsp;</p>
+        <p><br></p>
+        <p>But they will push that rock up that cliff, climb that mountain with only their hammer, until his friend can live again. And if K needs that same direction, that same persistence, that same shelter from the rain until he can figure himself out, then he shall receive it as well.&nbsp;</p>
+        <p><br></p>
+        <p>When their team has moved on, nestled nicely in the trivialities of someone else&rsquo;s lives, then they will rest, receding into the void to which they belong. Until then, they are the captain of Information.&nbsp;</p>
+        <p><br></p>
+        <p>And nothing-- not even Training-- will stand in their way.</p>
+    </div>
+
+  </div>
+
+  <div id="cast"></div>
+</body>
+
+</html>
